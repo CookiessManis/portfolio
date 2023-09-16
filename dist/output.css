@@ -1203,6 +1203,14 @@ input:checked + .toggle-bg {
   width: 2rem;
 }
 
+.w-48 {
+  width: 12rem;
+}
+
+.w-9 {
+  width: 2.25rem;
+}
+
 .max-w-\[250px\] {
   max-width: 250px;
 }
@@ -1285,12 +1293,24 @@ input:checked + .toggle-bg {
   grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
 
 .flex-col {
   flex-direction: column;
+}
+
+.place-content-center {
+  place-content: center;
+}
+
+.place-content-around {
+  place-content: space-around;
 }
 
 .items-start {
@@ -1357,6 +1377,24 @@ input:checked + .toggle-bg {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
+.-space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(-0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(-0.75rem * var(--tw-space-y-reverse));
+}
+
+.-space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(-0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(-0.5rem * var(--tw-space-y-reverse));
+}
+
+.-space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(-0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(-0.25rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -1462,6 +1500,10 @@ input:checked + .toggle-bg {
   --tw-bg-opacity: 0.5;
 }
 
+.fill-\[\#7952B3\] {
+  fill: #7952B3;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -1480,6 +1522,14 @@ input:checked + .toggle-bg {
 
 .p-16 {
   padding: 4rem;
+}
+
+.p-\[1\.5rem\] {
+  padding: 1.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .px-2 {
@@ -1532,12 +1582,21 @@ input:checked + .toggle-bg {
   padding-right: 0.75rem;
 }
 
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
 
 .pt-3 {
   padding-top: 0.75rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
 }
 
 .text-center {
@@ -1573,6 +1632,16 @@ input:checked + .toggle-bg {
   line-height: 1.25rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1599,6 +1668,10 @@ input:checked + .toggle-bg {
 
 .tracking-wider {
   letter-spacing: 0.05em;
+}
+
+.tracking-widest {
+  letter-spacing: 0.1em;
 }
 
 .text-black {
@@ -1699,6 +1772,10 @@ input:checked + .toggle-bg {
   transition-duration: 300ms;
 }
 
+.duration-200 {
+  transition-duration: 200ms;
+}
+
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1756,6 +1833,10 @@ input:checked + .toggle-bg {
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:fill-\[\#7952B3\]:hover {
+  fill: #7952B3;
 }
 
 .hover\:text-black:hover {
@@ -1943,8 +2024,28 @@ input:checked + .toggle-bg {
     width: 24rem;
   }
 
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
+  .lg\:w-64 {
+    width: 16rem;
+  }
+
+  .lg\:w-\[120px\] {
+    width: 120px;
+  }
+
+  .lg\:w-\[70\%\] {
+    width: 70%;
+  }
+
   .lg\:max-w-full {
     max-width: 100%;
+  }
+
+  .lg\:cursor-pointer {
+    cursor: pointer;
   }
 
   .lg\:flex-row {
@@ -2040,8 +2141,48 @@ input:checked + .toggle-bg {
     transition-duration: 500ms;
   }
 
+  .lg\:duration-300 {
+    transition-duration: 300ms;
+  }
+
   .lg\:ease-in-out {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .lg\:hover\:fill-\[\#7952B3\]:hover {
+    fill: #7952B3;
+  }
+
+  .lg\:hover\:fill-\[\#CC6699\]:hover {
+    fill: #CC6699;
+  }
+
+  .lg\:hover\:fill-\[\#06B6D4\]:hover {
+    fill: #06B6D4;
+  }
+
+  .lg\:hover\:fill-\[\#F7DF1E\]:hover {
+    fill: #F7DF1E;
+  }
+
+  .lg\:hover\:fill-\[\#1572B6\]:hover {
+    fill: #1572B6;
+  }
+
+  .lg\:hover\:fill-\[\#E34F26\]:hover {
+    fill: #E34F26;
+  }
+
+  .lg\:hover\:fill-\[\#777BB4\]:hover {
+    fill: #777BB4;
+  }
+
+  .lg\:hover\:fill-\[\#EF4223\]:hover {
+    fill: #EF4223;
+  }
+
+  .lg\:hover\:fill-\[\#FF2D20\]:hover {
+    fill: #FF2D20;
   }
 
   .lg\:hover\:underline:hover {
