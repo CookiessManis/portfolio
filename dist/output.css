@@ -1504,6 +1504,14 @@ input:checked + .toggle-bg {
   fill: #7952B3;
 }
 
+.fill-white {
+  fill: #ffffff;
+}
+
+.fill-blue-500 {
+  fill: #3F83F8;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
