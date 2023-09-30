@@ -1309,14 +1309,6 @@ input:checked + .toggle-bg {
   grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-rows-3 {
-  grid-template-rows: repeat(3, minmax(0, 1fr));
-}
-
 .flex-row {
   flex-direction: row;
 }
@@ -2125,6 +2117,10 @@ input:checked + .toggle-bg {
     fill: #1572B6;
   }
 
+  .lg\:hover\:fill-\[\#61DAFB\]:hover {
+    fill: #61DAFB;
+  }
+
   .lg\:hover\:fill-\[\#777BB4\]:hover {
     fill: #777BB4;
   }
@@ -2151,6 +2147,10 @@ input:checked + .toggle-bg {
 
   .lg\:hover\:fill-\[\#FF2D20\]:hover {
     fill: #FF2D20;
+  }
+
+  .lg\:hover\:fill-\[\#5A0EF8\]:hover {
+    fill: #5A0EF8;
   }
 
   .lg\:hover\:underline:hover {
